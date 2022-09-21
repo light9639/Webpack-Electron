@@ -1,7 +1,11 @@
-# **:zap: React-Electron 기본 템플릿**
-![다운로드](https://user-images.githubusercontent.com/95972251/191018713-30dfef7d-fab7-406d-a7c5-a6c8ff72840f.png)
+# **:zap: Webpack-Electron 기본 템플릿**
+![다운로드](https://user-images.githubusercontent.com/95972251/191444374-02243615-bd41-4924-a5dc-cd4836ecc92c.png)
 
-- 프로젝트 폴더 생성 이후 `npm init`으로 Package.json 생성.
+✨ Webpack-Electron 기본 템플릿입니다. ✨
+
+## :package: Package.json 생성
+
+:pushpin: 프로젝트 폴더 생성 이후 `npm init`으로 Package.json 생성.
 
 ## :tada: Electron Package 추가
 
@@ -19,9 +23,9 @@ npm install --save-dev electron
 }
 ```
 
-## :rocket: index.html, index.js, preload.js  생성
+## ✒️ index.html, index.js, preload.js  생성
 
-- index.html 생성
+:pushpin: index.html 생성
 
 ```bash
 <!DOCTYPE html>
@@ -42,7 +46,7 @@ npm install --save-dev electron
 </html>
 ```
 
-- index.js 생성
+:pushpin: index.js 생성
 
 ```bash
 const { app, BrowserWindow } = require('electron')
@@ -68,7 +72,7 @@ app.on('window-all-closed', function () {
 })
 ```
 
-- preload.js 생성
+:pushpin: preload.js 생성
 
 ```bash
 window.addEventListener('DOMContentLoaded', () => {
@@ -83,13 +87,13 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 ```
 
-## 프로젝트 실행
+:pushpin: 작성 후 프로젝트 실행
 
 ```bash
 npm start
 ```
 
-## :white_check_mark: 패키징과 배포
+## :rocket: 패키징과 배포
 
 - 패키징과 배포를 위한 가장 빠른 방법은 Electron Forge를 사용하는 것이기 때문에 Electron Forge를 설치합니다.
 
@@ -110,7 +114,7 @@ npm run make
 \out\my-electron-app-win32-x64\my-electron-app.exe
 ```
 
-## :memo: 리액트 패키지를 생성
+## 📋 리액트 패키지를 생성
 
 - 리액트 패키지 생성하기
 
@@ -137,7 +141,7 @@ import ReactDom from 'react-dom';
 ReactDom.render(<h1>Hello React App</h1>, document.getElementById('root'));
 ```
 
-## ✍️ Webpack 패키치 설치
+## :white_check_mark: Webpack 패키치 설치
 
 - 웹팩용 패키치 추가
 ```bash
@@ -145,6 +149,9 @@ npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-l
 ```
 
 ## ✍️ Webpack.common.js 생성 및 스크립트 추가
+
+- Webpack.common.js 생성
+
 ```bash
 const path = require('path');
 
@@ -199,7 +206,7 @@ module.exports = {
 "watch": "webpack --config webpack.common.js --watch",
 ```
 
-## 실행하기
+## :rocket: 실행하기
 - 스크립트가 실행되면 build/js/app.js가 생성됨.
 ```bash
 npm run watch

@@ -27,7 +27,7 @@ npm install --save-dev electron
 }
 ```
 
-## ✒️ index.html, index.js, preload.js  생성
+## :confetti_ball: index.html, index.js, preload.js  생성
 
 - index.html 생성
 
@@ -145,14 +145,14 @@ import ReactDom from 'react-dom';
 ReactDom.render(<h1>Hello React App</h1>, document.getElementById('root'));
 ```
 
-## :white_check_mark: Webpack 패키치 설치
+## 🧨 Webpack 패키치 설치
 
 - 웹팩용 패키치 추가
 ```bash
 npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader css-loader style-loader sass-loader sass webpack webpack-cli
 ```
 
-## ✍️ Webpack.common.js 생성 및 스크립트 추가
+## 💡 Webpack.common.js 생성 및 스크립트 추가
 
 - Webpack.common.js 생성
 

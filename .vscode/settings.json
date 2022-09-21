@@ -1,0 +1,8 @@
+{
+    "files.watcherExclude": {
+        "**/.git": true
+    },
+    "files.exclude": {
+        "**/.git": false
+    }
+}

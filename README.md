@@ -5,7 +5,11 @@
 
 ## :package: Package.json 생성
 
-:pushpin: 프로젝트 폴더 생성 이후 `npm init`으로 Package.json 생성.
+- 프로젝트 폴더 생성 이후 `npm init`으로 Package.json 생성.
+
+```bash
+npm init
+```
 
 ## :tada: Electron Package 추가
 
@@ -25,7 +29,7 @@ npm install --save-dev electron
 
 ## ✒️ index.html, index.js, preload.js  생성
 
-:pushpin: index.html 생성
+- index.html 생성
 
 ```bash
 <!DOCTYPE html>
@@ -46,7 +50,7 @@ npm install --save-dev electron
 </html>
 ```
 
-:pushpin: index.js 생성
+- index.js 생성
 
 ```bash
 const { app, BrowserWindow } = require('electron')
@@ -72,7 +76,7 @@ app.on('window-all-closed', function () {
 })
 ```
 
-:pushpin: preload.js 생성
+- preload.js 생성
 
 ```bash
 window.addEventListener('DOMContentLoaded', () => {
@@ -87,7 +91,7 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 ```
 
-:pushpin: 작성 후 프로젝트 실행
+- 작성 후 프로젝트 실행
 
 ```bash
 npm start

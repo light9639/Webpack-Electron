@@ -148,6 +148,7 @@
 ## 🧨 Webpack 패키치 설치
 
 - 웹팩용 패키치 추가
+
     ```bash
     npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader css-loader style-loader sass-loader sass webpack webpack-cli
     ```
